@@ -1,0 +1,42 @@
+@use '../../styles/font.scss';
+
+.containerText {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    font-family: font.$text-font;
+    max-width: 370px;
+    margin: 20px auto 20px;
+
+    h2 {
+        font-size: clamp(1.3rem,1vw + .8em,2rem);
+    }
+
+    p {
+        font-size: clamp(1rem,.5vw + .7em,1.3rem);
+
+    }
+
+    a {
+            width: 182px;
+        display: inline;
+        text-decoration: none;
+        margin: 10px auto 10px;
+        color: black;
+
+        &::after{
+            width: 150px;
+        }
+
+        h3 {
+            display: inline;
+            font-size: clamp(1rem,.5vw + .7em,1.3rem);
+            padding-left: 4px;
+            
+            &:hover {
+                cursor: pointer;
+                color: rgba(20, 19, 19, 0.373);
+            }
+        }
+    }
+}

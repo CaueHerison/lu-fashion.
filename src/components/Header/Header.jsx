@@ -22,7 +22,7 @@ const Header = () => {
                 <ul className={`${style.menu} ${isOpen ? style.active : ""}`} >
                     <li><Link to='/'>Inicio</Link></li>
                     <li><Link to='/produtos'>Produtos</Link></li>
-                    <li><Link to='/contato'>Contato</Link></li>
+                    <li><a href="#Contato">Contato</a></li>
                     <li><Link to='/sobre'>Sobre</Link></li>
                 </ul>
                 
