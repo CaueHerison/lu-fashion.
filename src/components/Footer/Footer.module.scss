@@ -1,0 +1,23 @@
+@use '../../styles/font.scss';
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: .8rem;
+    font-family: font.$text-font;
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        font-size: 1rem;
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+   .footer {
+       font-size: 1.1rem; 
+   }
+}

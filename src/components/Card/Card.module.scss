@@ -1,0 +1,80 @@
+@use '../../styles/variaveis.scss';
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    max-width: 1170px;
+
+    .cardItem {
+        max-width: 1170px;
+        padding: 1rem;
+
+        .cardImg {
+            position: relative;
+            max-width: 737px;
+            margin: auto;
+            margin-bottom: 30px;
+
+            
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;  
+                display: block;
+
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+
+        .cardText {
+            position: absolute;
+            top: 93%;
+            left: 5%;
+            background-color: variaveis.$soft-gray;
+            width: 90%;
+            max-width: 667px;
+            padding: clamp(.5rem,2vw + .5em,2rem);
+            text-align: center;
+            z-index: 1;
+
+            h2 {
+                font-size: clamp(1rem,2vw + 1em,2rem);
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card {
+        flex-flow: row nowrap;
+
+        .cardItem {
+            max-width: 370px;
+            margin: auto;
+
+            .cardImg {
+                max-width: 360px;
+                margin-bottom: 30px;
+            }
+
+            .cardText {
+                top: 89%;
+                left: 5%;
+                background-color: variaveis.$soft-gray;
+                width: 90%;
+                max-width: 667px;
+                padding: clamp(.5rem,.5vw + .5em,2rem);
+                text-align: center;
+                z-index: 1;
+
+                h2 {
+                    font-size: clamp(1rem,1vw + .8em,2rem);
+                }
+            }
+
+        }
+    }
+}

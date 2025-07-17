@@ -1,0 +1,137 @@
+@use '../../styles/font.scss';
+@use '../../styles/variaveis.scss';
+
+.header {
+    height: 64px;
+    width: 100%;
+    background-color: variaveis.$soft-gray;
+}
+
+.navBar {
+    height: 64px;
+    font-family: font.$text-font;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.logo {
+    font-weight: bold;
+    img {
+        height: 68px;
+        width: 100%;
+    }
+}
+
+.menuHamburgue {
+    height: 40px;
+    width: 40px;
+    background-color: variaveis.$powder-pink;
+    border: none;
+    color: variaveis.$black;
+    border-radius: 10px;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-flow: column nowrap;
+    background-color: variaveis.$powder-pink;
+    list-style: none;
+    margin: auto;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    
+    li {
+        text-align: center;
+        
+        &:hover{
+            background-color: variaveis.$pink-rose;
+        }
+        
+        a {
+            padding: .5rem;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            color: variaveis.$black;
+       }
+    }
+}
+
+.menu.active {
+    display: flex;
+}
+
+@media screen and (min-width:768px) {
+   .navBar {
+        padding: .7rem;
+    }
+
+    .menuHamburgue {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: variaveis.$soft-gray;
+        margin: 0;
+        position: relative;
+        top: 0px;
+        gap: 20px;
+
+        li {
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            a {
+                background-color: variaveis.$soft-gray;
+                padding: .7rem;
+                margin: 0 10px;
+                display: inline;
+                color: variaveis.$black;
+                border-radius: 5px;
+                font-size: 1.1rem;
+
+                &:hover {
+                    background-color: variaveis.$pink-rose;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header {
+        height: 80px;
+    }
+    
+    .navBar {
+        height: 80px;
+        padding: .7rem;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+    .menu > li > a {
+        font-size: 1.3rem;
+    }
+
+    .logo >img {
+        height: 83px;
+        width: 160px;
+    }
+
+}

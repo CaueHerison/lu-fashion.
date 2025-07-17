@@ -1,0 +1,64 @@
+@use '../../styles/variaveis.scss';
+@use '../../styles/font.scss';
+
+.container {
+    display: block;
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 0 20px 0;
+
+    .containerImg{
+        position: relative;
+        max-width: 1140px;
+        margin: auto;
+
+        .img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+
+    .text {
+        margin-top: 10px;
+        text-align: center;
+        
+        h1 {
+            font-family: font.$title-font;
+            font-weight: bolder;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-family: font.$text-font;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .text {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        transform: translateY(-50%);
+        max-width: 380px;
+        margin-top: 0;
+        background-color: #f4f4f4c8;
+        padding: 1.2rem;
+        border-radius: 4px;
+
+        h1 {
+            color: variaveis.$delicate-gold;
+        }
+
+        p {
+            color: variaveis.$delicate-gold;
+        }
+    }
+}

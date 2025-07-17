@@ -1,0 +1,64 @@
+@use '../../styles/font.scss';
+@use '../../styles/variaveis.scss';
+
+.banner {
+    max-width: 1400px;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.bannerText {
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.bannerText h1 {
+    font-family: font.$title-font;
+    font-size: clamp(2rem,7vw + .1rem,4rem);
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    font-family: font.$text-font;
+    text-decoration: none;
+    background-color: black;
+    color: variaveis.$pink-rose;
+    padding: .75rem 1rem;
+    border-radius: 4px;
+}
+
+.bannerImg {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .banner {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .bannerText {        
+        margin: auto;
+        text-align: left;
+    }
+
+    .bannerText h1 {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: .75rem 1rem;
+    }
+
+    .bannerImg {
+        display: block;
+        margin: auto;
+        max-width: 450px;
+    }
+
+}
