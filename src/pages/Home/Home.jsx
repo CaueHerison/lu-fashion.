@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import BannerImg from '../../components/BannerImg/BannerImg'

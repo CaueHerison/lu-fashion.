@@ -18,15 +18,10 @@
     }
 
     a {
-            width: 182px;
         display: inline;
         text-decoration: none;
         margin: 10px auto 10px;
         color: black;
-
-        &::after{
-            width: 150px;
-        }
 
         h3 {
             display: inline;

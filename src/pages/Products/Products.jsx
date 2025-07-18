@@ -1,10 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import Header from '../../components/Header/Header'
+import ProductsCard from '../../components/ProductsCard/ProductsCard'
+import Contact from '../../components/Contact/Contact'
+import Footer from '../../components/Footer/Footer'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <>
+      <Header />
+      <ProductsCard />
+      <Contact />
+      <Footer />
+    </>
   )
 }
 
