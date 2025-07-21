@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
-import ProductsCard from '../../components/ProductsCard/ProductsCard'
 import Contact from '../../components/Contact/Contact'
+import ProdutosPage from '../../components/ProdutosPage/ProdutosPage'
 import Footer from '../../components/Footer/Footer'
 
 const Products = () => {
   return (
     <>
       <Header />
-      <ProductsCard />
+      <ProdutosPage />
       <Contact />
       <Footer />
     </>
