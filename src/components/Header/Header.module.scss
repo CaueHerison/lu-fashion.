@@ -18,10 +18,12 @@
 }
 
 .logo {
+    height: 64px;
+    width: 160px;
     font-weight: bold;
     img {
-        object-fit: contain;
-        height: 68px;
+        object-fit: cover;
+        height: 100%;
         width: 100%;
     }
 }
@@ -114,11 +116,11 @@
 
 @media screen and (min-width:1200px) {
     .header {
-        height: 80px;
+        height: 70px;
     }
     
     .navBar {
-        height: 80px;
+        height: 70px;
         padding: .7rem;
     }
 
@@ -130,9 +132,8 @@
         font-size: 1.3rem;
     }
 
-    .logo >img {
-        height: 83px;
-        width: 160px;
+    .logo {
+        height: 70px;
     }
 
 }
