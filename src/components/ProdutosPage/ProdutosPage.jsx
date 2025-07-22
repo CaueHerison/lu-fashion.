@@ -1,9 +1,10 @@
 import style from './ProdutosPage.module.scss'
 import { useState } from 'react';
 
+
 const produtos = [
-  { id: 1, nome: 'Jaqueta Rosa', preco: '159,90', categoria: 'Blusas', imagem: '/images/jaqueta.png' },
-  { id: 2, nome: 'Beigee', preco: '79,90', categoria: 'Blusas', imagem: '/images/beigee.png' },
+  { id: 1, nome: 'Jaqueta Rosa', preco: '159,90', categoria: 'Blusas', imagem: '' },
+  { id: 2, nome: 'Beigee', preco: '79,90', categoria: 'Blusas', imagem: '' },
   { id: 3, nome: 'Jeans', preco: '199,90', categoria: 'Calças', imagem: '/images/jeans1.png' },
   { id: 4, nome: 'Vestidess', preco: '199,90', categoria: 'Vestidos', imagem: '/images/vestido.png' },
   { id: 5, nome: 'Guantré', preco: '39,90', categoria: 'Acessórios', imagem: '/images/bolsa.png' },

@@ -23,7 +23,6 @@ const Header = () => {
                     <li><Link to='/'>Inicio</Link></li>
                     <li><Link to='/produtos'>Produtos</Link></li>
                     <li><a href="#Contato">Contato</a></li>
-                    <li><Link to='/sobre'>Sobre</Link></li>
                 </ul>
                 
                 <button className={style.menuHamburgue} onClick={openBtn}>
